@@ -16,13 +16,6 @@ class DatabaseSeeder extends Seeder
    */
   public function run(): void
   {
-    // User::factory(10)->create();
-
-    User::factory()->create([
-      'name' => 'Test User',
-      'email' => 'test@example.com',
-    ]);
-
     // Agregar categorías
     Category::create(['name' => 'Generica', 'description' => 'Generica']);
     Category::create(['name' => 'Economica', 'description' => 'Económica']);
